@@ -1,0 +1,546 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background: #002E6D;
+    position: fixed;
+    padding: 0 5%;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+}
+
+#logo{
+    /* width: 140px; */
+    color: white;
+}
+
+h2 a{
+    color: white;
+    text-decoration: none;
+}
+
+.navLinks{
+    padding: 28px 0;
+}
+
+.navLinks li{
+    display: inline-block;
+    margin: 0 15px;
+    color: white;
+}
+
+.navLinks li a{
+    text-decoration: none;
+    padding: 5px 0;
+    color: white;
+}
+
+.navLinks li a button{
+    background-color: #AB8900;
+    color: white;
+    padding: 15px;
+    border: 0;
+}
+main{
+    margin-top: 100px;
+}
+
+#hero{
+    /* background: -webkit-linear-gradient( #011838,), url(img/Washington-DC-Capitol.jpg); */
+    background: url(img/Washington-DC-Capitol.jpg);
+    color: white;
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+    box-shadow: inset 0 0 0 2000px #011c28b2;
+}
+
+#pad{
+    padding-top: 30px;
+}
+
+#hero h1{
+    font-size: 1.8rem;
+    line-height: 1.02;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+
+#pad{
+    display: flex;
+    margin: 0 auto;
+    max-width: 1300px;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#pad .content{
+    margin-top: 30vh;
+    max-width: 45vw;
+}
+
+.content p{
+    font-size: 1.2rem;
+    font-weight: 30px;
+}
+
+.content #click{
+    margin-top: 3.5rem;
+}
+
+.content button{
+    background-color: #AB8900;
+    color: white;
+    padding: 20px 30px;
+    border: 0;
+    margin-top: 1rem;
+}
+
+.content button a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+#frame iframe{
+    margin-top: 180px;
+}
+
+
+
+/* who we are section */
+
+
+
+#whoWeAre{
+    background-color: #002E6D;
+    color: white;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+#whoWeAre .container{
+    display: flex;
+    margin: 0 auto;
+    max-width: 1300px;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#whoWeAre h1{
+    font-size: 2rem;
+    /* line-height: 2rem; */
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+#whoWeAre .image img{
+    width: 560px;
+}
+
+#whoWeAre p{
+    width: 650px;
+    margin-bottom: 20px;
+
+}
+#statistics{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+   
+}
+
+#statistics li{
+    list-style-type: none;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#bullet{
+    padding-left: 30px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+#b2{
+    background-color: #AB8900;
+    color: #fff;
+    padding: 10px 10px;
+    border: 0;
+    margin-top: 6rem;
+    font-size: 1rem;
+}
+
+
+/* showcase styles */
+
+#showcase{
+    background: url(img/lady-justice.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding-top: 7rem;
+}
+
+#showcase .header{
+    text-align: center;
+    max-width: 920px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+#showcase .header h1{
+    font-size: 2rem;
+    /* line-height: 2rem; */
+    font-weight: bold;
+    /* margin-bottom: 35px; */
+    color: #002E6D;
+}
+
+#showcase .header p{
+    color: black;
+    font-weight: lighter;
+    font-size: 1.3rem;
+}
+
+/* card design */
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 4rem;
+}
+
+.card{
+    flex: 1;
+    background-color: #fff;
+    width: 30%;
+    margin: 20px;
+    height: 500px;   
+}
+
+.card iframe{
+    max-width: 100%;
+    padding-bottom: 6rem;
+}
+
+.card .content{
+    position: relative;
+    top: -60px;
+    margin: 0 30px 30px 30px;
+}
+
+.card .content h3{
+    font-size: 1.05rem;
+    color: #002E6D;
+    font-weight: 60px;
+    padding-bottom: 1.5rem;
+
+}
+.card .content h1{
+    font-size: 2rem;
+    color: #002E6D;
+    font-weight: 120px;
+    padding-bottom: 1.5rem;
+}
+.card .content p{
+    color: rgb(46, 46, 46);
+    font-size: 1.1rem;
+}
+
+
+/* why we fight */
+
+#fight{
+    background-color: #002E6D;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+#fight .container{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    /* max-width: 1300px; */
+    padding: 0 20px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+#fight .container img{
+    max-width: 100%;
+    
+}
+
+#fight .container .content{
+    color: white;
+}
+
+#fight .container .content h3{
+    font-size: 1.3rem;
+    font-weight: 60px;
+    padding-bottom: 1.5rem;
+}
+
+#fight .container .content h1{
+    font-size: 2rem;
+    font-weight: 120px;
+    padding-bottom: 1.5rem;
+}
+
+#fight .container .content p{
+    padding-bottom: 3rem;
+    line-height: 1.5rem;
+}
+
+
+/* advert section */
+
+#adverts{
+    display: flex;
+    display: flex;
+    /* margin: 0 auto; */
+    /* max-width: 1300px; */
+    /* padding: 0 20px; */
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+.advert1{
+    background: url(img/Get-Involved.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    box-shadow: inset 0 0 0 2000px #011c28b2;
+}
+
+#adverts .content{
+    padding-top: 20rem;
+    padding-bottom: 3rem;
+    margin: 0 30px;
+    color: white;
+}
+
+
+
+.advert2{
+    background: url(img/Need-Help.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    box-shadow: inset 0 0 0 2000px #011c28b2;
+}
+
+#adverts .content h1{
+    font-size: 2rem;
+    font-weight: 120px;
+    padding-bottom: 1.5rem;
+}
+
+#adverts .content p{
+    font-size: 1.2rem;
+    font-weight: 60px;
+    padding-bottom: 2rem;
+}
+
+
+.footercontainer{
+    display: flex;
+    align-items: flex-end;
+}
+footer{
+    background-color: #121315;
+    color: white;
+    font-size: 16px;
+    /* height: 100vh; */
+}
+
+footer *{
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+.row{
+    padding: 2em 1em;
+}
+
+.row.primary{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    align-items: stretch;
+}
+
+.column{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.5em;
+    min-height: 15em;
+}
+
+.footercontainer h2{
+    width: 100%;
+    text-align: left;
+    font-size: 1.6em;
+    white-space: nowrap;
+}
+
+.footercontainer ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+li:first-child{
+    margin-top: 1.5em;
+}
+
+.contactcontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: stretch;
+}
+
+.contactcontainer div{
+    margin-top: 2em;
+}
+
+.about{
+    padding-top: 3.5em;
+}
+
+.locations{
+    padding-top: 4em;
+
+}
+
+.links{
+    padding-top: 4em;
+}
+
+.about p{
+    font-size: 16px;
+    padding-top: 2em;
+}
+
+.about h3{
+    padding-top: 1.3em;
+    padding-bottom: 0.7em;
+    font-weight: bold;
+}
+
+.about #emaillink{
+    font-size: 20px;
+    color: #AB8900;
+    text-decoration: none;
+}
+
+.fontawesome i{
+    padding-right: 1em;
+}
+
+.links h2{
+    padding-top: 1.2em;
+}
+
+.links li{
+    padding-bottom: 1.5em;
+    color: #AB8900;
+
+}
+
+.links li a{
+    color: #AB8900;
+}
+
+.links li:first-child{
+    margin-top: 3em;
+}
+
+.locations h2{
+    padding-top: 1.2em;   
+}
+
+.locations li{
+    padding-bottom: 0.5em;
+    font-size: 18px;
+}
+
+.line{
+    border-top: 1px solid gold;
+    margin-left: 2em;
+    margin-right: 2em;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1em;
+    box-sizing: border-box;
+}
+.line button{
+    background-color: #AB8900;
+    color: white;
+    padding: 15px;
+    border: 0;
+}
+
+@media screen and (max-width:1330px) {
+    #fight .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .row.primary{
+        grid-template-columns: 1fr;
+    }
+
+    .row .secondary{
+        flex-direction: column;
+    }
+
+    .contactcontainer{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .line{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        text-align: center;
+    }
+    #innerflex{
+        padding-top: 1em;
+    }
+
+    #adverts{
+        display: grid;
+        grid-template-columns: 1;
+    }
+
+    #fight .container{
+        display: flex;
+        flex-wrap: wrap;
+
+
+    
+}
+
+
+}
