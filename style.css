@@ -2,13 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Signika', sans-serif;
 }
 
 header{
     background: #002E6D;
     position: fixed;
     padding: 0 5%;
-    width: 100%;
+    
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     position: fixed; 
     top: 0;
@@ -20,6 +21,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;   
+    max-width: 1600px;
 }
 
 #logo{
@@ -55,7 +57,7 @@ h2 a{
     border: 0;
 }
 main{
-    margin-top: 100px;
+    margin-top: 7em;
 }
 
 #hero{
@@ -64,62 +66,71 @@ main{
     color: white;
     background-size: cover;
     background-position: center center;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     box-shadow: inset 0 0 0 2000px #011c28b2;
-}
-
-#pad{
-    padding-top: 30px;
-}
-
-#hero h1{
-    font-size: 1.8rem;
-    line-height: 1.02;
-    font-weight: bold;
-    margin-bottom: 15px;
-    margin-top: 25px;
-}
-
-#pad{
-    display: flex;
-    margin: 0 auto;
-    max-width: 1300px;
-    padding: 0 20px;
+    display: grid;
     align-items: center;
-    justify-content: space-between;
 }
 
-#pad .content{
-    margin-top: 30vh;
-    max-width: 45vw;
+
+#grid{
+    display: grid;
+    padding: 3em;
+    margin: 10em auto;
+    margin-top: 6em;
+    grid-template-columns: 1.5fr 1fr;
 }
 
-.content p{
-    font-size: 1.2rem;
-    font-weight: 30px;
+.item{
+    justify-self: center;
+    align-self: center;
 }
 
-.content #click{
-    margin-top: 3.5rem;
+#content1{
+    justify-self: center;
+    align-self: start;
+    padding-top: 20px;
 }
 
-.content button{
+#content1 h1{
+    font-size: 42px;
+    padding-bottom: 0.7em;
+}
+
+#content1 p{
+    font-size: 20px;
+    padding-right: 1em;
+    padding-bottom: 3em;
+}
+
+#content1 #click{
+    padding-bottom: 0;
+}
+
+#content1 a button{
     background-color: #AB8900;
     color: white;
-    padding: 20px 30px;
+    padding: 15px 3em;
     border: 0;
-    margin-top: 1rem;
+    font-size: 18px;
+    margin-top: 1em;
 }
 
-.content button a{
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
+.item iframe{
+    width: 36.25em;
+    height: 21.25em;
 }
 
-#frame iframe{
-    margin-top: 180px;
-}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -130,17 +141,21 @@ main{
 #whoWeAre{
     background-color: #002E6D;
     color: white;
+    padding: 0 2em;
     padding-top: 80px;
     padding-bottom: 100px;
 }
 
 #whoWeAre .container{
-    display: flex;
-    margin: 0 auto;
-    max-width: 1300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
     padding: 0 20px;
-    align-items: center;
-    justify-content: space-between;
+    place-items: center;
+}
+
+#whoWeAre .content{
+    max-width: 100%;
 }
 
 #whoWeAre h1{
@@ -151,14 +166,9 @@ main{
 }
 
 #whoWeAre .image img{
-    width: 560px;
+    max-width: 100%;
 }
 
-#whoWeAre p{
-    width: 650px;
-    margin-bottom: 20px;
-
-}
 #statistics{
     display: flex;
     justify-content: space-around;
@@ -194,6 +204,7 @@ main{
     background: url(img/lady-justice.jpg);
     background-size: cover;
     background-position: center center;
+    padding: 0 1.7em;
     padding-top: 7rem;
 }
 
@@ -206,9 +217,7 @@ main{
 
 #showcase .header h1{
     font-size: 2rem;
-    /* line-height: 2rem; */
     font-weight: bold;
-    /* margin-bottom: 35px; */
     color: #002E6D;
 }
 
@@ -221,17 +230,30 @@ main{
 /* card design */
 
 .cards{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-around;
     padding-bottom: 4rem;
+    gap: 20px;
+    padding: 0 3em;
+    padding-bottom: 4em;
+    max-width: 1600px;
+
+}
+
+.middlecontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .card{
-    flex: 1;
+    /* flex: 1; */
     background-color: #fff;
-    width: 30%;
-    margin: 20px;
-    height: 500px;   
+    /* width: 30%; */
+    /* margin: 20px; */
+    /* height: 500px;    */
 }
 
 .card iframe{
@@ -274,10 +296,10 @@ main{
 
 #fight .container{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr 1fr;
     margin: 0 auto;
-    /* max-width: 1300px; */
-    padding: 0 20px;
+    max-width: 1600px;
+    padding: 0 4em;
     align-items: center;
     justify-content: space-between;
     gap: 30px;
@@ -363,11 +385,13 @@ main{
 .footercontainer{
     display: flex;
     align-items: flex-end;
+    background-color: #121315;
 }
 footer{
-    background-color: #121315;
+    
     color: white;
     font-size: 16px;
+    /* max-width: 1600px; */
     /* height: 100vh; */
 }
 
@@ -491,8 +515,9 @@ li:first-child{
     margin-right: 2em;
     display: flex;
     justify-content: space-between;
-    padding-top: 1em;
+    padding-top: 0.5em;
     box-sizing: border-box;
+    padding-bottom: 1em;
 }
 .line button{
     background-color: #AB8900;
@@ -516,7 +541,7 @@ li:first-child{
     }
 
     .contactcontainer{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 
     .line{
@@ -537,10 +562,47 @@ li:first-child{
     #fight .container{
         display: flex;
         flex-wrap: wrap;
-
-
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .cards iframe{
+        width: 100%;
+        /* height: 600px; */
+    }
+    #whoWeAre .container{
+        grid-template-columns: 1fr;
+    }
+    .landing{
+        grid-template-columns: 1fr;
+    }
+    .landing frame{
+        width: 100%;
+    }
+    #grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 480px;
+        /* order: revert; */
+        /* margin-left: 0; */
+        margin: 0;
+        padding: 1em;
+        justify-content: center;
+        align-items: center;
+    }
     
-}
+    .item
+    #content1{
+        order: 2;
+    }
+
+    .item iframe{
+        width: 300px;
+        height: 280px;
+        order: 1;
+        padding: 0;
+    }
 
 
 }
